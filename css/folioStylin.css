@@ -1,0 +1,49 @@
+body{background-color: #eee;}
+h1{font-family: "georgia", serif;
+     color: rgb(119, 189, 194) ;
+      text-align: center; }
+ul {list-style-type: none; 
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 96%;}
+li { float: left;}
+.floaters{  float: right;}
+li a { display: block; 
+    color: rgb(75, 75, 75);
+     text-align: center; padding: 20px;
+     text-decoration: none;
+     font-size: large;}
+li a:hover:not(.active) {  
+      background-color: rgb(119, 189, 194);}
+.active { 
+    background-color:  rgb(119, 189, 194);}
+.footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: rgb(63, 61, 61);
+     color: white;
+     text-align: center;
+     padding: 8px;}
+.contact{background-color: whitesmoke; 
+    width: 55%; height: 35%;
+    padding: 10px;
+    position: abosolute;
+    margin: auto;
+    border: 60px; border-style: none;
+     border-top: 5px;}  
+.about{background-color: whitesmoke; 
+    width: 55%; height: 55%;
+    padding: 10px;
+    position: abosolute;
+    margin: auto;
+    border: 60px; border-style: none; 
+    border-top: 5px;}  
+.icecream2{height: 90%; 
+    float: left;}    
+.lorem{ width: 50%;
+     height: 25%;
+    float: right;
+}   
