@@ -45,5 +45,13 @@ li a:hover:not(.active) {
     float: left;}    
 .lorem{ width: 50%;
      height: 25%;
-    float: right;
-}   
+    float: right;}   
+div.gallery {margin: auto;
+    fixed: abosolute;
+    border-width: 2px; 
+    border-style: solid; 
+    border-color: #556b2f;  
+    width: 300px;}
+div.gallery: hover {border-width: 1.5px; border-style: solid; border-color: #556b2f;}
+div.gallery img {width: 100%; height: auto;}
+div.desc {text-align: center; }    
