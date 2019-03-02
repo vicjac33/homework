@@ -29,21 +29,30 @@ function start() {
     .prompt({
       name: "input",
       type: "item_id",
-      message: "Please provide the [item_id] you wish to buy"
+      message: "Please provide the [item_id] to start purchase."
     })
     .then(function(){
       orderProduct();
     });
 }
 
- function orderProduct() {
-  inquirer
+function orderProduct() {
+  productsArray = [];
+  connection.query("SELECT product FROM products", function(err, res) {
+      if (err) throw err;
+      if(res.length > 0){
+          for(var i = 0; i < res.length; i++){
+            productsArray.push(res[i].product);
+          }
+    inquirer
     .prompt([
       {
         name: "product name",
         type: "input",
         message: "How much of this product would like to order?"
       },
+    ])
+  };  
 /*      {
         name: "departmentName",
         type: "input",
